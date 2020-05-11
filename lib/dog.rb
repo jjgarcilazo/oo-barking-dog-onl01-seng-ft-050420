@@ -1,10 +1,11 @@
 # Your code goes here!
-fido = Dog.new
-fido.name = "Fido"
-fido.bark >"Woof!"
 class Dog
-  fido.name = "Fido"
-  fido.name => "Fido"
+  def name=(name)
+    @name = name
+  end
+  def name 
+    @name
+  end
   def bark
 puts  "woof!"
  end
